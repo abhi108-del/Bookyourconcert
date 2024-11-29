@@ -50,12 +50,44 @@ A terminal-based concert ticket booking system that enables user registration, l
 # 1. Install C++ and Java
 # 2. Set up JNI for C++ and Java interaction
 
-# Clone the repository
-git clone <repository-url>
+
+## 🔧 Project Setup and Installation
+
+### Prerequisites
+- Java Development Kit (JDK) 8 or higher
+- C++ Compiler (g++)
+- Git
+
+### Step-by-Step Installation
+
+1. **Clone the Repository**
+- git clone <repository-url>
+- cd concert-ticket-booking-system
 
 # Install dependencies and configure environment
 # Run the application
-java -Djava.library.path=path_to_jni mainApp
+- java -Djava.library.path=path_to_jni mainApp
+
+#### Set Up Java Environment
+# Verify Java installation
+- java -version
+- javac -version
+
+#### Generate JNI Header File
+# Compile Java file
+- javac BookYourConcert.java
+
+# Generate JNI header
+- javac -h . BookYourConcert.java
+#### Compile C++ Code
+#### For Linux/macOS:
+- g++ -shared -fpic -o libBookYourConcertLib.so draft.cpp \-I"$JAVA_HOME/include" \-I"$JAVA_HOME/include/linux"
+
+#### For Windows:
+- g++ -shared -o BookYourConcert.dll draft.cpp \-I"%JAVA_HOME%/include" \-I"%JAVA_HOME%/include/win32"
+#### Run the Application
+# Set library path and run
+- java -Djava.library.path=. BookYourConcert
 ## 🔄 Workflow
 
 - **Backend (C++)**: Manages core functions with concurrency controls
