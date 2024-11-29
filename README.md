@@ -46,9 +46,9 @@ A terminal-based concert ticket booking system that enables user registration, l
 
 ## 📦 Development Setup
 
-# Install prerequisites
-# 1. Install C++ and Java
-# 2. Set up JNI for C++ and Java interaction
+- Install prerequisites
+- 1. Install C++ and Java
+- 2. Set up JNI for C++ and Java interaction
 
 
 ## 🔧 Project Setup and Installation
