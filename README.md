@@ -62,10 +62,6 @@ java -Djava.library.path=path_to_jni mainApp
 - **Frontend (Java)**: Captures user input, handles UI, calls C++ functions
 - **Middleware (JNI)**: Bridges Java and C++ communication
 
-## 📊 UML Diagram
-
-[Include the UML Diagram from the original document]
-
 ## 🧪 Testing & Logging
 
 - Unit tests for C++ and Java modules
